@@ -1,0 +1,27 @@
+
+{
+    "compilerOptions": {
+      "incremental": true,
+      "experimentalDecorators": true,
+      "noImplicitAny": true,
+      "noEmitOnError": true,
+      "removeComments": true,
+      "noImplicitReturns": true,
+      "target": "ES2018",
+      "strict": true,
+      "declaration": true,
+      "outDir": "es",
+      "sourceRoot": "src",
+      "rootDir": "src",
+      "jsx": "react",
+      "importHelpers": true,
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "moduleResolution": "node",
+      "module": "ESNext"
+    },
+    "include": [
+      "src/**/*.ts*"
+    ]
+  }
+  
