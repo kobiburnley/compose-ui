@@ -31,7 +31,7 @@ export function createNode<C>(
     let nextChild
 
     if (typeof child === "function") {
-      nextChild = child(context)
+      nextChild = child(context, events)
     } else {
       nextChild = child.render()
       const disposer = child.init?.(context, events)
