@@ -19,7 +19,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "tsc -p tsconfig.build.json",
     "compile-watch": "tsc -p tsconfig.build.json -w",
-    "publish-local": "npm publish --registry http://localhost:4873"
+    "publish-local": "npm publish --registry http://localhost:4873 --force"
   },
   "author": "",
   "license": "ISC"
