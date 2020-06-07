@@ -18,7 +18,8 @@
       "skipLibCheck": true,
       "sourceMap": true,
       "moduleResolution": "node",
-      "module": "ESNext"
+      "module": "ESNext",
+      "composite": true
     },
     "include": [
       "src/**/*.ts*"
