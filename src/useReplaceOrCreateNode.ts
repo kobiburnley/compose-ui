@@ -5,13 +5,13 @@ export function useReplaceOrCreateNode<T extends Node>({
   context,
   createNode,
   nodeTypeMatches,
-  maybeNode,
 }: {
   context: Context
   createNode: () => T
   nodeTypeMatches: (node: Node) => boolean
-  maybeNode?: Node
 }): T {
+  const {parentNode, maybeNode} = context
+
   if (maybeNode == null) {
     return createNode()
   }
@@ -21,6 +21,6 @@ export function useReplaceOrCreateNode<T extends Node>({
   }
 
   const newNode = createNode()
-  context.parentNode.replaceChild(newNode, maybeNode)
+  parentNode.replaceChild(newNode, maybeNode)
   return newNode
 }

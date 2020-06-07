@@ -28,7 +28,6 @@ export function createNode<C extends Context = Context>({
         context,
         createNode: () => document.createTextNode(data),
         nodeTypeMatches: (node): node is Text => node instanceof Text,
-        maybeNode,
       })
       return currentNode
     }
